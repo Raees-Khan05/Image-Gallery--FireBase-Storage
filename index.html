@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Image Using FireBase Storage</title>
+</head>
+<style>
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+    .input {
+    display: none; 
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.custom-file-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6200ea; 
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-file-label:hover {
+    background-color: #3700b3;
+}
+
+.custom-file-label:active {
+    background-color: #1a00a3;
+
+}
+
+.save_file{
+    height: 40px;
+    margin-bottom: -1px;
+    /* margin-bottom: 13px; */
+    width: 70px;
+    /* margin-top: 5px; */
+    border-radius: 5px;
+    border: navajowhite;
+    margin-left: 9px;
+    
+}
+
+.save_file:hover{
+    background-color: darkgrey;
+    transition: 0.2s ease;
+}
+
+</style>
+<body>
+    
+   
+    <div class="main">
+
+
+    <input class="input" type="file" name="" id="car_img" />
+    <label for="car_img" class="custom-file-label">Choose File</label>
+    <button class="save_file" id="save_file">Save</button>
+
+    </div>
+
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; align-items: center;" id="container" class="container">
+            <!-- <img style="height: 300px; width: 300px; border-radius: 12px; margin: 31px;"> -->
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
